@@ -881,33 +881,48 @@ letter-spacing: 0.2px;
 }
 
 
-@media (max-width:360px) {
+@media screen and (min-width: 0px) and (max-width: 1023px) {
   
 html {
-    height: 78.5em;
-    
+    width: 100vw;
 }    
 body {
-    height: 78.5em;
     display:flex;
-    width: 22.5em;
     margin: 0em;
+    width: 100vw;
 }
 .grid-container {
-    height: 78.5em;
-    width: 100%;
+    width: 100vw;
+}
+
+.header {
+    display: flex;
+    background: #3D3759;
+    display: flex;
+    flex-direction: row;
+    background: #3D3759;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    flex-wrap: nowrap;
+    width: 100vw;
 }
 
 
 /* Header */
 .header-1 {
     justify-content: space-between;
-    padding: 0.75em 1.25em; 
     text-decoration: none;
-    height: 4.6em;
-    width: 100%;
     align-content: center;
     align-items: center;
+    display: flex;
+    width: 100vw;
+    border: 0px;
+}
+
+.scroll {
+    overflow: auto;
 }
 
 .logo-img {
@@ -925,7 +940,6 @@ body {
     display: flex;
     width: 24px;
     height: 24px;
-    
 }
 
 .btn-hamburger {
@@ -942,34 +956,18 @@ body {
     display: none;
 }
 
-.main {
-    display: flex;
-    padding: 1.5em;
-    height: 78.5em;
-    
-}
-
 .title-main {
     font-size: 1.1em;
-}
-
-#main-div-1 {
-    height: 16.93em;
-}
-#main-div-2 {
-    height: 17.93em;
-}
-#main-div-3 {
-    height: 21.62em;
-}
-#main-div-4 {
-    height: 17.93em;
 }
 
 .main-div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.music-card-type-1 {
+    gap: 20px;
 }
 
 .card-type-1-1, 
@@ -980,18 +978,11 @@ body {
     padding: 0.75em;
 }
 
-.card-bx {
-    width: 7.75em;
-    height: 7.75em;
-}
-
 .btn-card-type-2 {
     display: flex;
 }
 
 .music-cover-1 {
-    width: 3.875em;
-    height: 3.875em;
 }
 
 .sub-title-bx {
@@ -1004,12 +995,16 @@ body {
     letter-spacing: 0.2px;
 }
 
-
-.card-type-2-group-2,
-.card-type-2-group-3 {
-    display: none;
+.music-card-type-2 {
+    width: 65em;
 }
 
+.card-type-2-group-1,
+.card-type-2-group-2,
+.card-type-2-group-3
+ {
+    display: flex;
+}
 
 .card-type-2-1,
 .card-type-2-2,
@@ -1021,7 +1016,6 @@ body {
 .card-type-2-8,
 .card-type-2-9 {
     padding: 0.75em;
-    justify-content: space-between;
 }
 
 .show-all-media-query {
@@ -1030,28 +1024,16 @@ body {
     font-size: 0.875em;
     font-style: normal;
     font-weight: 700;
-    line-height: 140%; /* 19.6px */
+    line-height: 140%; 
     letter-spacing: 0.2px;
     display: flex;
     text-decoration: none;
-}
-.card-type-1-3, .card-type-1-4, .card-type-1-5{
-    display: none;
-}
-.card-type-2-4, 
-.card-type-2-5,
-.card-type-2-6,
-.card-type-2-7,
-.card-type-2-8,
-.card-type-2-9 {
-    display: none;
 }
 
 .show-all-initial {
     display: none;
 }
 
-.footer {
-    display: none;  
 }
-}
+
+
