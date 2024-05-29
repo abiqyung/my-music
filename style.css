@@ -987,6 +987,9 @@ body {
 .scroll {
     overflow: auto;
 }
+.scroll::-webkit-scrollbar {
+    display: none; 
+  }
 
 .logo-img {
     display: flex;
