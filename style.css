@@ -898,10 +898,6 @@ body {
 .header {
     display: flex;
     background: #3D3759;
-    display: flex;
-    flex-direction: row;
-    background: #3D3759;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-decoration: none;
@@ -919,6 +915,73 @@ body {
     display: flex;
     width: 100vw;
     border: 0px;
+}
+
+.footer {
+    justify-content: space-between;
+    text-decoration: none;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    border: 0px;
+    padding-right: 5em;
+
+}
+
+.img-card-3 {
+    width: 3.5em;
+}
+
+.song-card-3 {
+    width: max-content;
+}
+.song-card-3-gen {
+    width:max-content;
+    padding-right: 5px;
+}
+
+.play-btn-3 {
+    width: 26em;
+    /* height: 80%; */
+}
+
+.volume-btn-3 {
+    width: max-content;
+}
+.icon-footer {
+    height: 50%;
+}
+
+.icon-3-2 {
+    width: 1.4em;
+}
+.time-song {
+
+}
+.time-cage {
+    width: 11em;
+}
+#frame-rectangle {
+    width: 11em;
+}
+
+#time-rectangle {
+    width: 11em;
+}
+
+#frame-volume {
+    width: 2em;
+}
+
+#volume-rectangle {
+    width: 5em;
+}
+
+#micro-mic {
+    width:1.3em
+}
+#volume {
+    width:1.1em
 }
 
 .scroll {
@@ -1034,6 +1097,12 @@ body {
     display: none;
 }
 
+}
+
+@media (max-width: 790px) {
+    .footer {
+        display: none;
+    }
 }
 
 
